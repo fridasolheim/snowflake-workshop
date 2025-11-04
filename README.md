@@ -4,7 +4,7 @@ Velkommen til Snowflake-workshop! De neste to timene skal vi bryne oss på innhe
 
 ## DEL 1: Kobling mot Google Cloud Storage 💾
 
-Logg inn i [Snowflake](https://sc96841.europe-west4.gcp.snowflakecomputing.com/console/login#/) med brukernavn og passord du har blitt tildelt og naviger deg til **Projects -> Worksheets** og lag et nytt worksheet i høyre hjørne. Nå er du klar til å utvikle i ditt eget arbeidsområde!
+Logg inn i [Snowflake](https://sc96841.europe-west4.gcp.snowflakecomputing.com/console/login#/) med brukernavn og passord du har blitt tildelt og naviger deg til **Projects -> Workspaces** og lage en ny SQL-fil oppe ved siden av Home-filen. Nå er du klar til å utvikle i ditt eget arbeidsområde!
 
 > **Tips 💡** Når vi jobber i en Snowflake Worksheet er det ikke nødvendig å slette cellene etter de er kjørt. Du kan heller markere de linjene du ønsker skal kjøre, så har du også historikken med deg til senere oppgaver.  
 
@@ -16,14 +16,13 @@ CREATE DATABASE ditt_navn_database;
 CREATE SCHEMA ditt_navn_schema;
 ```
 
-Naviger deg til **Database** i panelet til venstre og kjør refresh. Nå vil du forhåpentligvis se at din nye database og skjema er opprettet.
+Naviger deg til **Database explorer** i panelet til venstre og kjør refresh. Nå vil du forhåpentligvis se at din nye database og skjema er opprettet.
 
-<img src=https://github.com/bekk/snowflake-workshop/assets/29883261/6f4f1fac-94f7-43f5-94c0-6bd47b4e4a25 width=250 />
+<img width="328" height="375" alt="Screenshot 2025-11-04 at 13 34 33" src="https://github.com/user-attachments/assets/2bd152f6-748c-4496-bc9d-e04e61db4f5d" />
 
-Det er slitsomt å måtte spesifisere hele stien hver gang vi oppretter en tabell. Heldigvis kan du slippe dette ved å sette hvilken kontekst du ønsker å være i (altså, hvilken database og hvilket skjema du vil bruke). I filen kan du navigere deg i venstre hjørne og sette database og skjema som vi akkurat lagde.
+Det er slitsomt å måtte spesifisere hele stien hver gang vi oppretter en tabell. Heldigvis kan du slippe dette ved å sette hvilken kontekst du ønsker å være i (altså, hvilken database og hvilket skjema du vil bruke). I filen din, oppe i høyre hjørne, kan du sette database og skjema som vi akkurat lagde.
 
-<img src=https://github.com/bekk/snowflake-workshop/assets/29883261/baac22e4-51e6-415c-98fb-02cf5ba46c44 width=400 />
-
+<img width="673" height="265" alt="Screenshot 2025-11-04 at 13 34 01" src="https://github.com/user-attachments/assets/561f6464-9ea7-4963-904f-11487d95e358" />
 
 Nok snikksnakk, la oss hente data fra GCP!
 
